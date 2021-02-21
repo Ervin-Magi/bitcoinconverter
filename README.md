@@ -68,3 +68,37 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## React Bootstrap
+
+The best way to consume React-Bootstrap is via the npm package which you can install with npm (or yarn if you prefer).
+
+### `npm install react-bootstrap bootstrap`
+
+## React Router
+
+React Router Core is published to npm so you can install it with either npm or yarn.
+
+### `npm install react-router`
+
+You can install React Router from the public npm registry with either npm or yarn. Since we’re building a web app, we’ll use react-router-dom in this guide.
+
+### `npm install react-router-dom`
+
+React Router Native is published to npm. You can install it with either npm or yarn.
+
+### `npm install react-router-native`
+
+## Rebass
+
+Install the core Rebass library.
+
+### `npm i rebass`
+
+ThemeProvider. By default, Rebass components are stylistically unopinionated and do not include a theme. You can add a theme to your application with a ThemeProvider component and by providing a theme in context. For this guide, use the Emotion ThemeProvider with the default Rebass preset theme.
+
+### `npm i @rebass/preset emotion-theming`
+
+Forms. Accessible and themeable form components for use with Rebass or Theme UI.
+
+### `npm i @rebass/forms`
