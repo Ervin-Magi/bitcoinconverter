@@ -10,10 +10,7 @@ import {
 } from "react-router-dom";
 import {
     Label,
-    Input,
-    Select,
-    Radio,
-    Checkbox,
+    Select
 } from '@rebass/forms'
 import {Button, Form, Nav, Navbar} from "react-bootstrap";
 import {Box} from "@material-ui/core";
@@ -61,6 +58,41 @@ function Home() {
     <Router>
         <div className="container">
             <h2>Home</h2>
+            <form action = '/' method = 'post'>
+            <Box
+                as='form'
+                onSubmit={e => e.preventDefault()}
+                py={22}>
+                <Flex mx={120} mb={3}>
+                    <Box width={1/2} px={2}>
+                        <Label htmlFor='kryptovaluutta'>Kryptovaluutta</Label>
+                        <Select name = 'crypto'
+                                id='crypto'
+                                defaultValue='BTC'>
+                            <option value = 'BTC'>BitCoin - ₿</option>
+                            <option value = 'ETH'>Ethereum - Ξ</option>
+                            <option value = 'LTC'>Litecoins - Ł</option>
+                        </Select>
+                    </Box>
+                    <Box width={1/2} px={2}>
+                        <Label htmlFor='valuutta'>Valuutta</Label>
+                        <Select name = 'fiat'
+                            id='fiat'
+                            defaultValue='EUR'>
+                                <option value = 'USD'>USD - $</option>
+                                <option value = 'EUR'>EUR - €</option>
+                                <option value = 'GBP'>GBP - £</option>
+                        </Select>
+                    </Box>
+                </Flex>
+                <Flex mx={120} flexWrap='wrap'>
+                    <Box px={2} ml='auto'>
+                        <Button type="submit" name="button">Muuntaa</Button>
+                    </Box>
+                </Flex>
+            </Box>
+            </form>
+
         </div>
         <footer className="new_footer_area">
             <div className="new_footer_top">
