@@ -8,36 +8,26 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import {
-    Label,
-    Input,
-    Select,
-    Radio,
-    Checkbox,
-} from '@rebass/forms'
 import {Button, Form, Nav, Navbar} from "react-bootstrap";
-import {Box} from "@material-ui/core";
-import {Flex} from "rebass";
 
 function App() {
     return (
         <Router>
             <Navbar style={{ backgroundColor: '#3139E5' }} variant="dark">
-                <Navbar.Brand href="#home">
-                    <img width="234px" height="30px" className="img-responsive" src={Logo}  alt="logo" />
-                </Navbar.Brand>
-                <Nav className="mr-auto">
-                    <Nav.Link href="/"><span className="material-icons d-inline-block align-top">savings</span> Home</Nav.Link>
-                    <Nav.Link href="/about"><span className="material-icons d-inline-block align-top">savings</span> About</Nav.Link>
-                    <Nav.Link href="/users">
-                        <span className="material-icons d-inline-block align-top">home</span> Users</Nav.Link>
-                </Nav>
-                <Form inline>
+                <div className="container">
+                    <Navbar.Brand href="/">
+                        <img width="234px" height="30px" className="img-responsive" src={Logo}  alt="logo" />
+                    </Navbar.Brand>
                     <Nav className="mr-auto">
-                        <Nav.Link href="/"><span className="material-icons d-inline-block align-top">login</span> Kirjaudu sisään</Nav.Link>
+                        <Nav.Link href="/"><span className="material-icons d-inline-block align-top">savings</span></Nav.Link>
                     </Nav>
-                    <Button variant="outline-light" href="/users"><span className="material-icons d-inline-block align-top">person_add</span> Rekisteröidy</Button>
-                </Form>
+                    <Form inline>
+                        <Nav className="mr-auto">
+                            <Nav.Link href="/users"><span className="material-icons d-inline-block align-top">login</span> Kirjaudu sisään</Nav.Link>
+                        </Nav>
+                        <Button variant="outline-light" href="/users"><span className="material-icons d-inline-block align-top">person_add</span> Rekisteröidy</Button>
+                    </Form>
+                </div>
             </Navbar>
             <div>
                 <Switch>
@@ -58,45 +48,8 @@ function App() {
 
 function Home() {
     return (
-    <Router>
-        <div className="container">
-            <h2>Home</h2>
-        </div>
-        <footer className="new_footer_area">
-            <div className="new_footer_top">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-3 col-md-6">
-                            <ul>
-                                <li>
-                                    <Nav.Link href="/users"><span className="material-icons d-inline-block align-top">history</span> Historia</Nav.Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <ul>
-                                <li>
-                                    <Nav.Link href="/users"><span className="material-icons d-inline-block align-top">star_rate</span> Tallennettu</Nav.Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="footer_bottom">
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-6 col-sm-7">
-                            <p>© 2021 Bitcoin converter. Kaikki oikeudet pidätetään.</p>
-                        </div>
-                        <div className="col-lg-6 col-sm-5 text-right">
-                            <p>Made with ❤️</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </Router>
+        <Router>
+        </Router>
     );
 }
 
@@ -119,5 +72,6 @@ function Users() {
         </Router>
     );
 }
+
 
 export default App;
