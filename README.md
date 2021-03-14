@@ -89,16 +89,20 @@ React Router Native is published to npm. You can install it with either npm or y
 
 ### `npm install react-router-native`
 
-## Rebass
+## Material-UI
 
-Install the core Rebass library.
+React components for faster and simpler web development. Build your own design system, or start with Material Design.
 
-### `npm i rebass`
+### `npm install @material-ui/core`
 
-ThemeProvider. By default, Rebass components are stylistically unopinionated and do not include a theme. You can add a theme to your application with a ThemeProvider component and by providing a theme in context. For this guide, use the Emotion ThemeProvider with the default Rebass preset theme.
+## JSON Server
 
-### `npm i @rebass/preset emotion-theming`
+JSON Server is available as a NPM package. The installation can be done by using the Node.js package manager:
 
-Forms. Accessible and themeable form components for use with Rebass or Theme UI.
+### `npm install -g json-server`
 
-### `npm i @rebass/forms`
+### `json-server --port=3000 --watch db.json`
+
+## API and SDK Documentation
+
+bitcoinconverter/src/html2-documentation-generated/index.html

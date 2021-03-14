@@ -72,7 +72,7 @@ class Currency extends React.Component {
 
         return (
             React.createElement("div", { style: this.containerStyles }, /*#__PURE__*/
-                React.createElement("div", null, this.props.coins, " ",React.createElement("span", null, this.props.symbol + this.props.currencyName), " " + " x " + +this.props.buy + " = ", " ", /*#__PURE__*/React.createElement("span", { className: "js-animate", style: this.convertedStyles }, this.renderCurrencyConversion(this.props.buy, this.props.coins) + " " + this.props.symbol))));
+                React.createElement("div", null, this.props.coins, " ",React.createElement("span", null, this.props.currencyName), " " + " x " + +this.props.buy + " = ", " ", /*#__PURE__*/React.createElement("span", { className: "js-animate", style: this.convertedStyles }, this.renderCurrencyConversion(this.props.buy, this.props.coins) + " " + this.props.symbol))));
 
 
     }}

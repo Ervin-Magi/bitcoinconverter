@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.min.css';
+import Comment from './components/Comment'
 import Logo from './BC.svg';
 import {
     BrowserRouter as Router,
@@ -20,6 +20,7 @@ function App() {
                     </Navbar.Brand>
                     <Nav className="mr-auto">
                         <Nav.Link href="/"><span className="material-icons d-inline-block align-top">savings</span></Nav.Link>
+                        <Nav.Link href="/comment"><span className="material-icons d-inline-block align-top">forum</span></Nav.Link>
                     </Nav>
                     <Form inline>
                         <Nav className="mr-auto">
@@ -31,8 +32,8 @@ function App() {
             </Navbar>
             <div>
                 <Switch>
-                    <Route path="/about">
-                        <About />
+                    <Route path="/comment">
+                        <Comment />
                     </Route>
                     <Route path="/users">
                         <Users />
@@ -49,16 +50,6 @@ function App() {
 function Home() {
     return (
         <Router>
-        </Router>
-    );
-}
-
-function About() {
-    return (
-        <Router>
-            <div className="container">
-                <h2>About</h2>
-            </div>
         </Router>
     );
 }
