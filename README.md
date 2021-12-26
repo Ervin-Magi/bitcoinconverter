@@ -105,4 +105,4 @@ JSON Server is available as a NPM package. The installation can be done by using
 
 ## API and SDK Documentation
 
-bitcoinconverter/src/html2-documentation-generated/index.html
+[bitcoinconverter/src/html2-documentation-generated](https://github.com/ervinizzm/bitcoinconverter/tree/master/src/html2-documentation-generated)
